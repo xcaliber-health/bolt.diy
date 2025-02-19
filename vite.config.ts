@@ -93,6 +93,9 @@ export default defineConfig((config) => {
     build: {
       target: 'esnext',
     },
+    server: {
+      allowedHosts: ['xcaliber-boltdiy.xcaliberhealth.io'],
+    },
     plugins: [
       nodePolyfills({
         include: ['path', 'buffer', 'process'],
